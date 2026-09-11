@@ -1,0 +1,16 @@
+export const CARS = [
+  'Audi',
+  'BMW',
+  'Tesla',
+  'Alfa Romeo',
+  'Ford',
+  'Kia',
+  'Rover',
+  'Saab',
+  'Seat',
+  'Skoda',
+  'Smart',
+  'SsangYong',
+  'Subaru',
+  'Suzuki',
+];
