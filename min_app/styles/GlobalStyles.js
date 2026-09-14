@@ -13,6 +13,7 @@ export const colors = {
   tabInactive: '#AAB8BE',
 };
 
+// Fælles skygge, som bruges på kort og knapper.
 const shadow = {
   shadowColor: '#172026',
   shadowOffset: { width: 0, height: 4 },
@@ -22,6 +23,7 @@ const shadow = {
 };
 
 export const globalStyles = StyleSheet.create({
+  // Grundlayout for appens forskellige sider.
   screen: {
     flex: 1,
     backgroundColor: colors.background,
@@ -44,6 +46,165 @@ export const globalStyles = StyleSheet.create({
     color: colors.muted,
     fontSize: 15,
     marginBottom: 24,
+  },
+  // Layout til listen over lokale grupper.
+  eyebrow: {
+    color: colors.accent,
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 1.2,
+    marginBottom: 8,
+  },
+  groupList: {
+    paddingBottom: 24,
+  },
+  groupCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: 18,
+    padding: 16,
+    marginBottom: 12,
+    ...shadow,
+  },
+  cardPressed: {
+    opacity: 0.75,
+  },
+  cardIcon: {
+    width: 48,
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 14,
+    backgroundColor: colors.accentSoft,
+    marginRight: 12,
+  },
+  cardContent: {
+    flex: 1,
+  },
+  cardHeading: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+  cardTitle: {
+    color: colors.ink,
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  cardMeta: {
+    color: colors.muted,
+    fontSize: 13,
+    marginTop: 4,
+  },
+  cardDetail: {
+    color: colors.ink,
+    fontSize: 13,
+    fontWeight: '600',
+    marginTop: 8,
+  },
+  discountBadge: {
+    color: colors.accent,
+    backgroundColor: colors.accentSoft,
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    fontSize: 12,
+    fontWeight: '800',
+  },
+  detailCard: {
+    backgroundColor: colors.surface,
+    borderRadius: 18,
+    padding: 20,
+    ...shadow,
+  },
+  detailLabel: {
+    color: colors.muted,
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 1,
+  },
+  detailDiscount: {
+    color: colors.accent,
+    fontSize: 42,
+    fontWeight: '800',
+    marginVertical: 4,
+  },
+  progressTrack: {
+    height: 8,
+    backgroundColor: colors.accentSoft,
+    borderRadius: 4,
+    marginTop: 20,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: colors.accent,
+    borderRadius: 4,
+  },
+  successText: {
+    color: '#2A7A4B',
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginTop: 12,
+  },
+  noteText: {
+    color: colors.muted,
+    fontSize: 12,
+    lineHeight: 18,
+    textAlign: 'center',
+    marginTop: 20,
+  },
+  emptyState: {
+    alignItems: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: 18,
+    padding: 24,
+    ...shadow,
+  },
+  emptyStateTitle: {
+    color: colors.ink,
+    fontSize: 17,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+  emptyStateText: {
+    color: colors.muted,
+    fontSize: 14,
+    lineHeight: 21,
+    textAlign: 'center',
+    marginTop: 8,
+  },
+  profileCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: 18,
+    padding: 16,
+    ...shadow,
+  },
+  profileAvatar: {
+    width: 52,
+    height: 52,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 26,
+    backgroundColor: colors.accent,
+    marginRight: 12,
+  },
+  profileAvatarText: {
+    color: colors.surface,
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  sectionLabel: {
+    color: colors.muted,
+    fontSize: 13,
+    fontWeight: '700',
+    marginTop: 28,
+    marginBottom: 8,
   },
   listContainer: {
     width: '100%',

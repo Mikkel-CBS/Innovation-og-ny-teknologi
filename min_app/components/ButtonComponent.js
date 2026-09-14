@@ -3,6 +3,7 @@ import { globalStyles } from '../styles/GlobalStyles';
 
 export default function ButtonComponent({ title, onPress }) {
   return (
+    // Genbrugelig knap til handlinger i appen.
     <Pressable
       style={({ pressed }) => [
         globalStyles.button,

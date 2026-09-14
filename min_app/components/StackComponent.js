@@ -1,20 +1,17 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import SettingsScreen from '../screens/SettingsScreen';
-import AppDetailsScreen from '../screens/StackScreens/AppDetailsScreen';
-import UserProfileScreen from '../screens/StackScreens/UserProfileScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createStackNavigator();
 
 export default function StackNavigation() {
   return (
-    <Stack.Navigator initialRouteName="Settings Screen">
+    // Profilen ligger i sin egen stack, så den kan udvides senere.
+    <Stack.Navigator>
       <Stack.Screen
-        name="Settings Screen"
-        component={SettingsScreen}
+        name="Profil"
+        component={ProfileScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="User Profile" component={UserProfileScreen} />
-      <Stack.Screen name="App Details" component={AppDetailsScreen} />
     </Stack.Navigator>
   );
 }
