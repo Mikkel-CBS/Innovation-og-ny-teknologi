@@ -8,7 +8,7 @@ export default function StackNavigation() {
     // Profilen ligger i sin egen stack, så den kan udvides senere.
     <Stack.Navigator>
       <Stack.Screen
-        name="Profil"
+        name="Profiloversigt"
         component={ProfileScreen}
         options={{ headerShown: false }}
       />

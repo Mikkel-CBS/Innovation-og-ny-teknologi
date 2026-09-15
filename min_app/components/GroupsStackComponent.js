@@ -10,7 +10,7 @@ export default function GroupsStackComponent() {
     // Giver adgang til både gruppelisten og gruppedetaljerne.
     <Stack.Navigator screenOptions={navigationStyles}>
       <Stack.Screen
-        name="Find grupper"
+        name="Gruppeoversigt"
         component={FindGroupsScreen}
         options={{ headerShown: false }}
       />
