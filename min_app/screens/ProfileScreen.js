@@ -10,6 +10,7 @@ export default function ProfileScreen() {
       <Text style={globalStyles.screenSubtitle}>
         Administrer dine oplysninger og præferencer.
       </Text>
+      {/* Midlertidige profiloplysninger i prototypen. */}
       <View style={globalStyles.profileCard}>
         <View style={globalStyles.profileAvatar}>
           <Text style={globalStyles.profileAvatarText}>MK</Text>

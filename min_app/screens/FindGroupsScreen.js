@@ -6,6 +6,7 @@ import { colors, globalStyles } from '../styles/GlobalStyles';
 export default function FindGroupsScreen({ navigation }) {
   return (
     <View style={globalStyles.screen}>
+      {/* Introduktion til de lokale grupper, kunden kan vælge imellem. */}
       <Text style={globalStyles.eyebrow}>LOKALE DEALS</Text>
       <Text style={globalStyles.screenTitle}>Find en gruppe</Text>
       <Text style={globalStyles.screenSubtitle}>
@@ -14,6 +15,7 @@ export default function FindGroupsScreen({ navigation }) {
       <FlatList
         data={GROUPS}
         contentContainerStyle={globalStyles.groupList}
+        // Bruger gruppens id, så hvert element får en stabil nøgle.
         keyExtractor={(item) => item.id}
         // Hvert kort åbner detaljerne for den valgte gruppe.
         renderItem={({ item }) => (
@@ -22,6 +24,7 @@ export default function FindGroupsScreen({ navigation }) {
               globalStyles.groupCard,
               pressed && globalStyles.cardPressed,
             ]}
+            // Sender den valgte gruppe videre til detaljesiden.
             onPress={() => navigation.navigate('Gruppedetaljer', { group: item })}
           >
             <View style={globalStyles.cardIcon}>

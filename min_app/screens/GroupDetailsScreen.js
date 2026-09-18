@@ -4,7 +4,9 @@ import ButtonComponent from '../components/ButtonComponent';
 import { globalStyles } from '../styles/GlobalStyles';
 
 export default function GroupDetailsScreen({ route }) {
+  // Henter den gruppe, som kunden trykkede på.
   const { group } = route.params;
+  // Holder styr på, om kunden har tilmeldt sig gruppen.
   const [joined, setJoined] = useState(false);
 
   return (
@@ -14,6 +16,7 @@ export default function GroupDetailsScreen({ route }) {
       <Text style={globalStyles.screenTitle}>{group.service}</Text>
       <Text style={globalStyles.screenSubtitle}>{group.description}</Text>
       <View style={globalStyles.detailCard}>
+        {/* Viser gruppens forventede rabat og fremdrift. */}
         <Text style={globalStyles.detailLabel}>FORVENTET RABAT</Text>
         <Text style={globalStyles.detailDiscount}>{group.discount}</Text>
         <Text style={globalStyles.cardMeta}>{group.price}  ·  {group.deadline}</Text>
@@ -32,6 +35,7 @@ export default function GroupDetailsScreen({ route }) {
       </View>
       <ButtonComponent
         title={joined ? 'Du er med i gruppen' : 'Bliv medlem af gruppen'}
+        // Skifter knapteksten, når kunden tilmelder sig.
         onPress={() => setJoined(true)}
       />
       {joined && (

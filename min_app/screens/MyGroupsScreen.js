@@ -10,6 +10,7 @@ export default function MyGroupsScreen() {
       <Text style={globalStyles.screenSubtitle}>
         Her kan du følge dine aktive gruppeaftaler.
       </Text>
+      {/* Tom tilstand indtil kunden har meldt sig ind i en gruppe. */}
       <View style={globalStyles.emptyState}>
         <Text style={globalStyles.emptyStateTitle}>Du er ikke med i en gruppe endnu</Text>
         <Text style={globalStyles.emptyStateText}>

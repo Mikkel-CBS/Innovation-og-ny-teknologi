@@ -1,5 +1,6 @@
 // Eksempelgrupper, som vises for kunder i prototypen.
 export const GROUPS = [
+  // Eksempel på en gruppe, der næsten har nået sit kundemål.
   {
     id: 'windows',
     service: 'Vinduespudsning',
@@ -12,6 +13,7 @@ export const GROUPS = [
     deadline: 'Om 4 dage',
     description: 'Saml naboerne og få pudset vinduerne til en bedre pris.',
   },
+  // Eksempel på en mindre gruppe med længere tid til deadline.
   {
     id: 'lawn',
     service: 'Græsslåning',
@@ -24,6 +26,7 @@ export const GROUPS = [
     deadline: 'Om 6 dage',
     description: 'Få en lokal græsplæneekspert ud, mens I deler rabatten.',
   },
+  // Eksempel på en gruppe tæt på deadline.
   {
     id: 'hedge',
     service: 'Hækklipning',

@@ -7,6 +7,7 @@ import StackNavigation from './components/StackComponent';
 import MyGroupsScreen from './screens/MyGroupsScreen';
 import { navigationStyles } from './styles/GlobalStyles';
 
+// Opretter navigationen nederst i appen.
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           ...navigationStyles,
+          // Finder det rigtige ikon ud fra den aktive fane.
           tabBarIcon: ({ focused, color, size }) => {
             // Ikonet skifter, når fanen er aktiv.
             const icons = {
@@ -40,6 +42,7 @@ export default function App() {
         />
         <Tab.Screen name="Profil" component={StackNavigation} options={{ headerShown: false }} />
       </Tab.Navigator>
+      {/* Tilpasser statusbaren til appens aktuelle tema. */}
       <StatusBar style="auto" />
     </NavigationContainer>
   );
