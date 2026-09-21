@@ -4,8 +4,9 @@ En React Native-app bygget med Expo. Appen gør det muligt at finde grupper, se 
 
 ## Links
 
-- **YouTube-video:** [Indsæt link til YouTube-video her](https://www.youtube.com/)
-- **GitHub repository:** https://github.com/Mikkel-CBS/Innovation-og-ny-teknologi.git 
+- **YouTube-video:** [https://www.youtube.com/shorts/ZLnuMudbLMw?si=CUNwhyKVVpPhER63]
+- **GitHub repository:** [https://github.com/Mikkel-CBS/Innovation-og-ny-teknologi.git]
+
 
 ## Forudsætninger
 
@@ -34,7 +35,7 @@ npm install
 
 ## Start appen
 
-Start Expo development serveren med tunnel-forbindelse:
+Start Expo development serveren evt. med tunnel-forbindelse:
 
 ```bash
 npx expo start --tunnel
