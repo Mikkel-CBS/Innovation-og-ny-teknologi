@@ -7,19 +7,18 @@ import StackNavigation from './components/StackComponent';
 import MyGroupsScreen from './screens/MyGroupsScreen';
 import { navigationStyles } from './styles/GlobalStyles';
 
-// Opretter navigationen nederst i appen.
+// Samler appens tre hovedområder i en navigation nederst på skærmen.
 const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
+    // NavigationContainer holder styr på den aktuelle side og navigationshistorikken.
     <NavigationContainer>
-      {/* Hovednavigationen samler appens tre kundeområder. */}
       <Tab.Navigator
         screenOptions={({ route }) => ({
           ...navigationStyles,
-          // Finder det rigtige ikon ud fra den aktive fane.
+          // Vælger et ikon ud fra hvilken fane der er aktiv.
           tabBarIcon: ({ focused, color, size }) => {
-            // Ikonet skifter, når fanen er aktiv.
             const icons = {
               'Find grupper': focused ? 'search' : 'search-outline',
               'Mine grupper': focused ? 'people' : 'people-outline',

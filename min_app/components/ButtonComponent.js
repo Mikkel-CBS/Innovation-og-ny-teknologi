@@ -1,11 +1,11 @@
 import { Pressable, Text } from 'react-native';
 import { globalStyles } from '../styles/GlobalStyles';
 
+// Fælles knap, så handlinger ser ens ud på alle skærme.
 export default function ButtonComponent({ title, onPress }) {
   return (
-    // Genbrugelig knap til handlinger i appen.
     <Pressable
-      // Giver knappen en tydelig trykket-tilstand.
+      // Giver brugeren visuel feedback, når knappen trykkes.
       style={({ pressed }) => [
         globalStyles.button,
         pressed && globalStyles.buttonPressed,
