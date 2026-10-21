@@ -63,6 +63,23 @@ Kontrollér også, at:
 - `npm install` er kørt efter ændringer i projektet
 - Expo Go og projektets Expo-version er kompatible
 
+Hvis `--tunnel` fejler med `Cannot read properties of undefined (reading
+'body')`, er det normalt Ngrok-forbindelsen eller en manglende lokal
+installation af afhængighederne, ikke appens kode. Kør kommandoerne fra
+`min_app`-mappen og prøv igen:
+
+```bash
+npm install
+npx expo start --clear --tunnel
+```
+
+Hvis tunnelen stadig ikke kan oprettes, kan appen startes på det lokale
+netværk i stedet:
+
+```bash
+npx expo start --clear --lan
+```
+
 ## Projektstruktur
 
 ```text
