@@ -6,7 +6,7 @@ tilmeldinger.
 
 ## Links
 
-- **YouTube-video:** [https://www.youtube.com/shorts/ZLnuMudbLMw?si=CUNwhyKVVpPhER63]
+- **YouTube-video:** [https://www.youtube.com/watch?v=2l26qThvLgk]
 - **GitHub repository:** [https://github.com/Mikkel-CBS/Innovation-og-ny-teknologi.git]
 
 
